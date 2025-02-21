@@ -1,10 +1,9 @@
 [build]
-  command = """
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt --no-cache-dir
-  """
+  command = "npm run build"
   publish = "."
 
 [build.environment]
-  PYTHON_VERSION = "3.8.12"
+  NODE_VERSION = "16"
+  PYTHON_VERSION = "3.8.10"
+
 
