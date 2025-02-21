@@ -1,17 +1,17 @@
 #!/bin/bash
+#!/bin/bash
+set -e  # Exit on any error
 
-# Update pip to latest version
-echo "Updating pip..."
+# Clear environment
+echo "🔄 Clearing previous builds..."
+rm -rf node_modules
+rm -rf __pycache__
+
+# Update pip and install dependencies
+echo "📦 Installing Python packages..."
 python -m pip install --upgrade pip
-
-# Install Python dependencies
-echo "Installing Python dependencies..."
 pip install -r requirements.txt --no-cache-dir
 
-# Make the app executable
-echo "Setting up application..."
-chmod +x app.py
-
-# Start the application using gunicorn
-echo "Starting application with gunicorn..."
-gunicorn app:app --bind 0.0.0.0:$PORT
+# Start application
+echo "🚀 Starting application..."
+python app.py
