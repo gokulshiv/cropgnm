@@ -2,9 +2,11 @@
   "name": "cropgnm",
   "version": "1.0.0",
   "engines": {
-    "node": "16.14.0"
+    "node": "16.14.0",
+    "npm": "8.x"
   },
   "scripts": {
-    "build": "python -m pip install -r requirements.txt"
+    "build": "./scripts/build.sh",
+    "start": "python app.py"
   }
 }
