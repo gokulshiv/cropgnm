@@ -1,6 +1,9 @@
 {
   "name": "cropgnm",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.14.0"
+  },
   "scripts": {
     "build": "python -m pip install -r requirements.txt"
   }
