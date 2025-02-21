@@ -6,4 +6,5 @@
   publish = "."
 
 [build.environment]
-  PYTHON_VERSION = "3.9.6"
+  PYTHON_VERSION = "3.8.12"
+
