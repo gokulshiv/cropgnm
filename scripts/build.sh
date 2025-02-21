@@ -3,15 +3,11 @@ set -e
 
 echo "🔧 Starting build process..."
 
-# Install npm dependencies
-echo "📦 Installing npm packages..."
+# Install and build frontend
 npm install
+npx rollup -c
 
 # Install Python dependencies
-echo "📦 Installing Python packages..."
-python -m pip install --upgrade pip
-pip install -r requirements.txt --no-cache-dir
+python -m pip install -r requirements.txt
 
-# Start application
-echo "🚀 Starting application..."
-python app.py
+echo "✅ Build completed!"
