@@ -1,6 +1,8 @@
 [build]
-  command = "./scripts/build.sh"
+  command = "npm run build"
   publish = "."
 
 [build.environment]
+  NODE_VERSION = "16.14.0"
   PYTHON_VERSION = "3.8.10"
+  NPM_VERSION = "8.x"
