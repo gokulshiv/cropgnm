@@ -3,6 +3,10 @@ set -e
 
 echo "🔧 Starting build process..."
 
+# Install npm dependencies
+echo "📦 Installing npm packages..."
+npm install
+
 # Install Python dependencies
 echo "📦 Installing Python packages..."
 python -m pip install --upgrade pip
