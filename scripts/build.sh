@@ -1,12 +1,9 @@
 #!/bin/bash
-set -e  # Exit on any error
+set -e
 
-# Clear environment
-echo "🔄 Clearing previous builds..."
-rm -rf node_modules
-rm -rf __pycache__
+echo "🔧 Starting build process..."
 
-# Update pip and install dependencies
+# Install Python dependencies
 echo "📦 Installing Python packages..."
 python -m pip install --upgrade pip
 pip install -r requirements.txt --no-cache-dir
@@ -14,4 +11,3 @@ pip install -r requirements.txt --no-cache-dir
 # Start application
 echo "🚀 Starting application..."
 python app.py
-
