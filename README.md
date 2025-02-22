@@ -12,3 +12,4 @@ Advanced agricultural analysis system using machine learning
 - Flask
 - Bootstrap
 - Plotly
+- 
